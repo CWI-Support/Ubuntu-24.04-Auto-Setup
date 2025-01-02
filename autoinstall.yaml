@@ -1,0 +1,20 @@
+autoinstall:
+  version: 1
+  identity:
+    hostname: luckyputt
+    username: luckyputt
+    password: "$y$j9T$WpXGMXHNZsU5nvXkb9lVj1$y9PMMyH6cbILsdK8VHZ96Zlfi23GpcPchVd6JYDroW4"
+  storage:
+    layout:
+      name: direct
+  snaps:
+    - name: firefox
+    - name: gnome-3-38-2004
+    - name: gtk-common-themes
+    - name: snap-store
+    - name: snapd-desktop-integration
+  packages:
+    - vim
+  late-commands:
+    - curtin in-target -- apt update
+    - curtin in-target -- apt upgrade

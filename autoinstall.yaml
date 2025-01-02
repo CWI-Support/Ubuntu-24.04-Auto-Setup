@@ -8,7 +8,7 @@ autoinstall:
     layout:
       name: direct
   snaps:
-    - name: firefox
+    - name: chrome
     - name: gnome-3-38-2004
     - name: gtk-common-themes
     - name: snap-store
